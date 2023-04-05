@@ -1,5 +1,6 @@
-* EMACS Package Management
-** Straight-Use-Package1. Requirements:
+* EMACS Package Management 
+(should be placed in init.el)
+** Straight-Use-Package
 1. Info:
    - [[https://jeffkreeftmeijer.com/emacs-straight-use-package/][Emacs package management with straight.el and use-package]]
 2. Requirements:
