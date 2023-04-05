@@ -1,0 +1,32 @@
+* EMACS Package Management
+** Straight-Use-Package1. Requirements:
+1. Info:
+   - [[https://jeffkreeftmeijer.com/emacs-straight-use-package/][Emacs package management with straight.el and use-package]]
+2. Requirements:
+   - sudo apt install git
+#+begin_src emacs-lisp
+  (defvar bootstrap-version)
+  (let ((bootstrap-file
+	 (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+	(bootstrap-version 6))
+    (unless (file-exists-p bootstrap-file)
+      (with-current-buffer
+	  (url-retrieve-synchronously
+	   "https://raw.githubusercontent.com/radian-software/straight.el/develop/install.el"
+	   'silent 'inhibit-cookies)
+	(goto-char (point-max))
+	(eval-print-last-sexp)))
+    (load bootstrap-file nil 'nomessage))
+#+end_src
+* EMACS Packages
+** LaTeX
+1. Info:
+2. Use with:
+   - sudo apt install texlive-latex-base   ;; For compile
+   - sudo apt install zathura              ;; For instant view of compiled tex -> pdf
+3. Shortcuts:
+   - C-c C-e   ;; Create LaTeX Environment
+   - C-c C-c   ;; Compile into PDF same dir
+#+begin_src emacs-lisp
+  (straight-use-package 'auctex)
+#+end_src
