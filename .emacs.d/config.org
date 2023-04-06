@@ -39,4 +39,5 @@ It is activated via M-x rainbow-delimiters-mode
 #+begin_src emacs-lisp
   (straight-use-package 'rainbow-delimiters)
   (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'text-mode-hook 'rainbow-delimiters-mode)
 #+end_src
