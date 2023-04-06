@@ -31,3 +31,12 @@
 #+begin_src emacs-lisp
   (straight-use-package 'auctex)
 #+end_src
+
+** RainbowDelimiters
+Parenthesis colored by its hierarchy.
+It is activated via M-x rainbow-delimiters-mode
+[[https://www.emacswiki.org/emacs/RainbowDelimiters][Is there a way to enable automatic in all major modes?]]
+#+begin_src emacs-lisp
+  (straight-use-package 'rainbow-delimiters)
+  (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+#+end_src
