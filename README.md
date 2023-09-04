@@ -1,8 +1,8 @@
 # dotfiles
 
 Desktop Ubuntu 22 
-i3wm
-emacs
+* i3wm
+* emacs
 
 Macbook Ubuntu 22
 * i3wm
